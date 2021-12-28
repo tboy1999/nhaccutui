@@ -29,8 +29,11 @@ body {
     line-height: 55px;
     justify-content: space-between;
     position: fixed;
+    top: 0;
     border-bottom: 1px solid #ccc;
-    
+    width: 1200px;
+    z-index: 99;
+    background: #fff
 }   
 
 .header-top {
