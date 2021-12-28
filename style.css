@@ -55,27 +55,16 @@ body {
 }
 
 
-.submenu {
+.header-top__item .submenu {
     position:  absolute;
     width: 600px;
     border: 1px solid #ccc;
     padding-left: 20px;
     overflow: hidden; 
-    animation: fadeIn ease-in-out 0.5s;
     display: none;
     justify-content: space-between;
-}
-
-@keyframes fadeIn {
-    from {  
-        opacity: 0;
-        height: 0
-    }
-
-    to {
-        opacity: 1;
-        height: auto
-    }
+    padding: 0 40px;
+    color: #000
 }
 
 .header-top__item:hover .submenu {
@@ -96,6 +85,12 @@ body {
     padding-top: 2px;
 }
 .header-top__item:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    
+}
+
+.submenu-item:hover {
     color: var(--primary-color);
     cursor: pointer;
     
@@ -178,3 +173,14 @@ body {
     top: 50%;
     transform: translateY(-50%)
 }
+
+.login::after {
+    position: absolute;
+    content: "";
+    height: 24px;
+    border-left: 1px solid #ccc;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
