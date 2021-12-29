@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="./grid/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <div class="app">
@@ -344,17 +347,336 @@
         </div> 
 
         <div class="slider">
-            <div class="slider-list-img">
+            <div class="slideshow-container">
 
-            </div>
-            <div class="slider-icon slider-icon__left">
-                <i class='bx bx-chevron-left'></i>
-            </div>
-            <div class="slider-icon slider-icon__right">
-                <i class='bx bx-chevron-right'></i>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="./img/1610356004043_org.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="./img/1615460135754_org.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="./img/1631500414107_org.jpg" style="width:100%">
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center" class="slider-dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="col l-9">
+                    <div class="content-box">
+                        <h2>NHÌN LẠI 2021</h2>
+                        <ul class="content-list">
+                            <div class="row">
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1610356004043_org.jpg" alt="">
+                                    </li>   
+                                    <p>Top V-POP Hot Nhất 2021</p>
+                                </div>
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1615460135754_org.jpg" alt="">
+                                    </li>
+                                    <p>Top EDM Hot Nhất 2021</p>
+                                </div>
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1631500414107_org.jpg" alt="">
+                                    </li>
+                                    <p>Top NHẠC PHIM HOA NGỮ Hot Nhất 2021</p>
+                                </div>
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1634801803471_org.jpg" alt="">
+                                    </li>
+                                    <p>Top NHẠC PHIM HÀN QUỐC Hot Nhất 2021</p>
+                                </div>
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1636095251577_org.jpg" alt="">
+                                    </li>
+                                    <p>Top C-POP Hot Nhất 2021</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="content-box">
+                        <h2>NHÌN LẠI 2021</h2>
+                        <ul class="content-list">
+                            <div class="row">
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1610356004043_org.jpg" alt="">
+                                    </li>   
+                                    <p>Top V-POP Hot Nhất 2021</p>
+                                </div>
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1615460135754_org.jpg" alt="">
+                                    </li>
+                                    <p>Top EDM Hot Nhất 2021</p>
+                                </div>
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1631500414107_org.jpg" alt="">
+                                    </li>
+                                    <p>Top NHẠC PHIM HOA NGỮ Hot Nhất 2021</p>
+                                </div>
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1634801803471_org.jpg" alt="">
+                                    </li>
+                                    <p>Top NHẠC PHIM HÀN QUỐC Hot Nhất 2021</p>
+                                </div>
+                                <div class="col l-2-4">
+                                    <li class="content-item">
+                                        <img src="./img/1636095251577_org.jpg" alt="">
+                                    </li>
+                                    <p>Top C-POP Hot Nhất 2021</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="sizebar">
+                        <div class="sizebar-top">
+                            <div class="sizebar-top__title">
+                                <h2>
+                                    BXH Bài Hát
+                                </h2>
+                                <i class='bx bx-play-circle'></i>
+                            </div>
+                            <div class="sizebar-top__button">
+                                <div>
+                                    <button>Việt Nam</button>
+                                </div>
+                                <div>
+                                    <button>Âu Mỹ</button>
+                                </div>
+                                <div>
+                                    <button>Hàn Quốc</button>
+                                </div>
+                            </div>
+                            <div class="sizebar-top__content">
+                                <div class="sizebar-top__content--top1">
+                                    <div class="content-top1__left">
+                                        <img src="./img/1638180197658.jpg" alt="">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="content-top1__right">
+                                        <p>Đế Vương</p>
+                                        <span>Đình Dũng, AVC</span>
+                                    </div>
+                                </div>
+                                <ul class="sizebar-top__content--list">
+                                    <li class="sizebar-top__content--item">
+                                        <div class="row">
+                                            <div class="col content-item__left">
+                                                <h4>2</h4>
+                                            </div>
+                                            <div class="col content-item__right">
+                                                <p>Bước Qua Đời Nhau</p>
+                                                <span>Vũ</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sizebar-top__content--item">
+                                        <div class="row">
+                                            <div class="col content-item__left">
+                                                <h4>2</h4>
+                                            </div>
+                                            <div class="col content-item__right">
+                                                <p>Bước Qua Đời Nhau</p>
+                                                <span>Vũ</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sizebar-top__content--item">
+                                        <div class="row">
+                                            <div class="col content-item__left">
+                                                <h4>2</h4>
+                                            </div>
+                                            <div class="col content-item__right">
+                                                <p>Bước Qua Đời Nhau</p>
+                                                <span>Vũ</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sizebar-top__content--item">
+                                        <div class="row">
+                                            <div class="col content-item__left">
+                                                <h4>2</h4>
+                                            </div>
+                                            <div class="col content-item__right">
+                                                <p>Bước Qua Đời Nhau</p>
+                                                <span>Vũ</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sizebar-top__content--item">
+                                        <div class="row">
+                                            <div class="col content-item__left">
+                                                <h4>2</h4>
+                                            </div>
+                                            <div class="col content-item__right">
+                                                <p>Bước Qua Đời Nhau</p>
+                                                <span>Vũ</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="overflow">
+        <div class="footer">
+            <div class="footer-top">
+                <p>LIÊN KẾT VÀ HỢP TÁC</p>
+                <div class="row">
+                    <div class="col cooperate">
+                        <img src="https://stc-id.nixcdn.com/v11/images/footer/9.png" alt="">
+                    </div>
+                    <div class="col cooperate">
+                        <img src="https://stc-id.nixcdn.com/v11/images/footer/1-new.png" alt="">
+                    </div>
+                    <div class="col cooperate">
+                        <img src="https://stc-id.nixcdn.com/v11/images/footer/2-new.png" alt="">
+                    </div>
+                    <div class="col cooperate">
+                        <img src="https://stc-id.nixcdn.com/v11/images/footer/17.png" alt="">
+                    </div>
+                    <div class="col cooperate">
+                        <img src="https://stc-id.nixcdn.com/v11/images/footer/19.png" alt="">
+                    </div>
+                    <div class="col cooperate">
+                        <img src="https://stc-id.nixcdn.com/v11/images/footer/12.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-body">
+                <div class="row">
+                    <div class="col l-4 footer-body__body">
+                        <p>HỖ TRỢ</p>
+                        <ul>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Trợ Giúp
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Chính Sách Bảo Mật
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Sơ Đồ
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Chính Sách SHTT
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                NCCI</li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Thỏa Thuận Người Dùng
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Liên Hệ Quảng Cáo
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 footer-body__body">
+                        <p>HỖ TRỢ</p>
+                        <ul>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Trợ Giúp
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Chính Sách Bảo Mật
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Sơ Đồ
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Chính Sách SHTT
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                NCCI</li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Thỏa Thuận Người Dùng
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Liên Hệ Quảng Cáo
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 footer-body__body">
+                        <p>HỖ TRỢ</p>
+                        <ul>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Trợ Giúp
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Chính Sách Bảo Mật
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Sơ Đồ
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Chính Sách SHTT
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                NCCI</li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Thỏa Thuận Người Dùng
+                            </li>
+                            <li>
+                                <i class='bx bx-chevron-right' ></i>
+                                Liên Hệ Quảng Cáo
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom"></div>
+        </div>
+    </div>
+    
 
     <script src="./slider.js"></script>
 </body>
