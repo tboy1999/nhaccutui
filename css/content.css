@@ -173,3 +173,59 @@
     font-weight: 400;
 }
 
+.content-margin {
+    margin-bottom: 20px;
+}
+
+.name_singer {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+.athor {
+   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    width: 152px;
+    margin-bottom: 5px;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.playbuton {
+    position: relative;
+}
+
+.playbuton img {
+    transition: 0.5s
+}
+
+.playbuton:hover img {
+    opacity: 0.7;
+}
+
+.playbuton div {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.playbuton div i {
+    font-size: 55px;
+    color: #fff;
+    opacity: 0;
+    display: none;
+    transition: 0.5s;
+
+}
+
+.playbuton:hover div i{
+    display: block;
+    opacity: 1;
+}
